@@ -58,15 +58,15 @@ const Index = () => {
       <section className="container py-20">
         <div className="grid md:grid-cols-3 gap-5">
           {[
-            { icon: Hand, label: "Manual", desc: "Do it yourself.", tone: "manual" },
-            { icon: Sparkles, label: "Hybrid", desc: "AI assists, human owns the output.", tone: "hybrid" },
-            { icon: Bot, label: "Automate", desc: "Safe to automate with checks.", tone: "automate" },
+            { icon: Hand, label: "Manual", desc: "Do it yourself.", tone: "bg-manual text-manual-foreground" },
+            { icon: Sparkles, label: "Hybrid", desc: "AI assists, human owns the output.", tone: "bg-hybrid text-hybrid-foreground" },
+            { icon: Bot, label: "Automate", desc: "Safe to automate with checks.", tone: "bg-automate text-automate-foreground" },
           ].map(({ icon: Icon, label, desc, tone }) => (
             <div
               key={label}
               className="rounded-2xl border border-hairline bg-card p-7 shadow-soft hover:shadow-elevated transition-shadow"
             >
-              <div className={`inline-flex items-center justify-center w-10 h-10 rounded-lg bg-${tone} text-${tone}-foreground mb-5`}>
+              <div className={`inline-flex items-center justify-center w-10 h-10 rounded-lg ${tone} mb-5`}>
                 <Icon className="w-5 h-5" />
               </div>
               <h3 className="font-display text-2xl mb-2">{label}</h3>
