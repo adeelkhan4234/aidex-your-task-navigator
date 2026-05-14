@@ -132,6 +132,7 @@ const Index = () => {
           <div className="flex gap-6">
             <a href="#" className="hover:text-foreground transition-colors">Privacy</a>
             <a href="#" className="hover:text-foreground transition-colors">Terms</a>
+            <a href="/admin" className="hover:text-foreground transition-colors">Admin</a>
           </div>
         </div>
       </footer>
